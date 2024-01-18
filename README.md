@@ -97,6 +97,6 @@ For this deliverable I will use webSocket to update the votes on the frontend in
 
 For this deliverable I will convert the application over to use React.
 
-Bundled and transpiled
-Components - Login, Message, edit preferences.
-Router - Routing between login and messaging components.
+1. Bundled and transpiled
+2. Components - Login, Message, edit preferences.
+3. Router - Routing between login and messaging components.
