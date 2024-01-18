@@ -9,7 +9,8 @@ Have you ever wanted to join a chat group to nerd out about your favorite book, 
 ![Scannable Document on Jan 17, 2024 at 10_03_54 PM](https://github.com/Treckon/start-up/assets/135891708/ce4565e5-e8d6-473e-91b6-c246688feb0d)
 ![Scannable Document 3 on Jan 17, 2024 at 9_45_49 PM](https://github.com/Treckon/start-up/assets/135891708/9aeeb584-2b77-48d2-8149-41dac57e8604)
 
-The following is a sequence diagram detailing how comments from users are managed in the comment threads:
+###The following is a sequence diagram detailing how comments from users are managed in the comment threads:
+
 ![Scannable Document on Jan 17, 2024 at 9_46_26 PM](https://github.com/Treckon/start-up/assets/135891708/1b2f83b4-a0ae-401d-8676-84ee31f12889)
 
 ## Key Features
