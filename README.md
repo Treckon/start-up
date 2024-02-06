@@ -23,7 +23,7 @@ Have you ever wanted to join a chat group to nerd out about your favorite book, 
 ## Technologies
 I am going to use the required technologies in the following ways.
 
-1. HTML - Uses correct HTML structure for application. Four HTML pages, one for login, one for listing comment pages, one for displaying lists of messages, and one for the profile page.
+1. HTML - Uses correct HTML structure for application. Five HTML pages, one for login, one for listing comment pages, one for displaying lists of messages, one for editing profile information, and one for the profile page.
 2. CSS - Application styling that looks good on different screen sizes, uses good whitespace, color choice and contrast.
 3. JavaScript - Provides login, database searching for chat groups, and spoiler setting configuration
 4. Service - Backend service with endpoints for:
@@ -39,11 +39,11 @@ React - Application ported to use the React web framework.
 
 The structure of this application is built out using HTML
 
-1. HTML pages - Four HTML pages, one for login, one for listing comment pages, one for displaying lists of messages, and one for the profile page.
-2. Links - The login page automatically links to the profile page if signing up. The profile page and login page link to the chat page. Links are imbedded in chat group names when they appear, leading to a page with the chat message history.
+1. HTML pages - Five HTML pages, one for login, one for listing comment pages, one for displaying lists of messages, one for editing profile information and one for the profile page.
+2. Links - The login page automatically links to the profile page if signing up. The profile page and login page link to the chat page. Links are imbedded in chat group names when they appear, leading to a page with the chat message history. Link located in the profile page that directs you to enter profile information.
 3. Text - Each of chat groups displays a list of messages and allows for the user to input as well.
-4. Images - I am unsure how to include images and so will not include them.
-5. DB/Login - Input box and submit button for login. The chat groups and messages are also stored in a database under the name of the chat group.
+4. Images - Heading images for decorative purposes in the fantasy base.
+5. DB/Login - Input box and submit button for login. The chat groups and messages are also stored in a database under the name of the chat group. Profile information, including spoiler settings, also stored in a database.
 6. WebSocket - new messages appear on the chat group page as they are entered by users.
 
 ## CSS Deliverable
