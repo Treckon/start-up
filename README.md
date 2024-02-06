@@ -5,7 +5,7 @@ Have you ever wanted to join a chat group to nerd out about your favorite book, 
 
 ## Design
 
-![Scannable Document on Jan 17, 2024 at 9_45_49 PM](https://github.com/Treckon/start-up/assets/135891708/da735c66-85c6-49f0-b108-16b46b72062a)
+![297621245-da735c66-85c6-49f0-b108-16b46b72062a](https://github.com/Treckon/start-up/assets/135891708/9272310c-b9a4-4eb3-b94c-a82ef08ce748)
 ![Scannable Document on Jan 17, 2024 at 10_03_54 PM](https://github.com/Treckon/start-up/assets/135891708/ce4565e5-e8d6-473e-91b6-c246688feb0d)
 ![Scannable Document 3 on Jan 17, 2024 at 9_45_49 PM](https://github.com/Treckon/start-up/assets/135891708/9aeeb584-2b77-48d2-8149-41dac57e8604)
 
