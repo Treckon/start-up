@@ -72,7 +72,7 @@ table{
     position:fixed;
     left: 25%;
     text-align: center;
-
+    overflow-y:auto;
 }
 fieldset{
     margin:10px;
