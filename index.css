@@ -68,9 +68,11 @@ table, th, td{
 }
 table{
     width:50%;
+    height:auto;
     position:fixed;
     left: 25%;
     text-align: center;
+
 }
 fieldset{
     margin:10px;
