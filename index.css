@@ -89,6 +89,20 @@ p.alert{
 h2.instruction{
     text-align: center;
 }
+p.instruction{
+    text-align: center;
+}
+
 #profile{
     flex: 1;
+}
+#login{
+    flex: 0, 300px;
+    width: 50%;
+    height: 300px;
+    position:fixed;
+    left: 25%;
+}
+li{
+    margin-left: 10px;
 }
