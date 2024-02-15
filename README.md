@@ -51,11 +51,11 @@ The structure of this application is built out using HTML
 For this deliverable I properly styled the application into its final appearance.
 
 1. Header, footer, and main content body with search for finding desired chat.
-2. Navigation elements - profile icon located in the top right on all pages for easy access.
+2. Navigation elements - profile and sign out elements located under the site title. Site title may be selected to return home.
 3. Responsive to window resizing - My app looks great on all window sizes and is most effective on computer, but can accomodate different devices.
 4. Application elements - Uses contrast, font styling, and spacing to make recognizing chat groups easy.
 5. Application text content - Consistent fonts, clear enough to be easily read.
-6. Application images - Still don't have images and so no styling here.
+6. Application images - background image inlaid behind the main webpage for stylistic effect.
 
 ## JavaScript Deliverable
 
