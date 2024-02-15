@@ -70,6 +70,9 @@ table{
     left: 25%;
     text-align: center;
 }
+fieldset{
+    margin:10px;
+}
 #SearchBox{
     width: 75%;
 }
