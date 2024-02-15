@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fantasy Base!</title>
+    <link rel="stylesheet" href="index.css" />
+    
+</head>
+<body>
+    <header>
+        <h1><a href = "index.html">Fantasy Base</a></h1>
+        <a href="profile.html">Profile</a>
+    </header>
+
+    <main id="index">
+        <section id="SearchBox">
+            <div id="filter">
+                <h2 class="instruction">Search for your desired chat via the following filters:</h2>
+                <form action = "index.html" method="post">
+                    <label for="ta">Search thread name:</label>
+                    <input type="text" name="nameFilter" value="Search keywords here."/>
+                    <label for="select">Series:</label>
+                    <select id="select" name="series">
+                        <option>none</option>
+                        <option>Stormlight Archive</option>
+                        <option>Mistborn</option>
+                        <option>Wax and Wayne</option>
+                        <option>Tress of the Emerald Sea</option>
+                        <option>Elantris</option>
+                        <option>Warbreaker</option>
+                    </select>
+                    <label for="checkbx">Spoilers:</label>
+                    <input type="checkbox" name="Spoilers" value="checkbx" unchecked/>
+                    <input type="button" name="Search Chats" value="Search Chats"/>
+                    
+                </form>
+            </div>
+
+            <ul>
+                <h2><a href="chat.html">Mistborn Chat</a></h2>
+                <p>Tags: Mistborn</p>
+                <p>Creator Username: noobmaster69</p>
+            </ul>
+            <ul>
+                <h2><a href="chat.html">TWOK Chat</a></h2>
+                <p class="alert">Warning! According to your profile, this chat may contain spoilers.</p>
+                <p>Tags: The Way of Kings</p>
+                <p>Creator Username: leroyjenkins</p>
+            </ul>
+        </section>
+
+        <section id="Notifications">
+            <h2>Notifications</h2>
+            <ul>
+                <li>Steve has commented in Mistborn Chat</li>
+                <li>Bob has commented in Mistborn Chat</li>
+                <li>noobmaster69 has commented in TWOK Chat</li>
+            </ul>
+        </section>
+        
+    </main>
+    <footer>
+        <p>Made by Conner Brown</p>
+        <a href="https://github.com/Treckon/start-up">GitHub</a>
+    </footer>
+
+</body>
+</html>
