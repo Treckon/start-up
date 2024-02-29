@@ -1,7 +1,9 @@
 html{
     height:100%;
 }
-
+a{
+    text-decoration:none
+}
 body{
     display: flex;
     flex-direction:column;
@@ -117,3 +119,5 @@ p.instruction{
 li{
     margin-left: 10px;
 }
+
+
