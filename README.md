@@ -62,9 +62,15 @@ For this deliverable I properly styled the application into its final appearance
 Functionality for this website configured using JavaScript for a single individual.
 
 1. login - When you sign up for the first time, you are taken to the profile page to set up your spoiler settings. If you are loggin in, you are taken straight to the chat groups list.
-2. database - Stores in an external database the user profiles, chat groups, and the messages contained in them.
-3. WebSocket - I used the setInterval function to periodically get new messages from other users.
-4. application logic - The groups that appear on the chat group menu are automatically filtered based on the reading progress of the user.
+2. database - Upon editing your user profile settings, stores your current reading progress for displaying on your profile page. Also stores information such as Username.
+3. WebSocket - I used the setInterval function to periodically send notifications to the main page about chats that have been messaged in.
+4. application logic - Within chat pages, can submit comments that will be added to the page. Each comment you make will be tagged with your current username.
+5. login logic - If the user is not logged in, any page they try to visit will result in being redirected to the login page. The logic checks the local storage for userName every page load to create this effect. When Sign Out is selected, local storage is cleared, so the user must log in again to continue.
+
+
+
+
+
 
 ## Service Deliverable
 
