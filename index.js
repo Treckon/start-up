@@ -5,6 +5,10 @@ function loginRedirect(){
         window.location.href = "login.html"
     }
 }
+function signOut(){
+    localStorage.removeItem("userName")
+    window.location.href = "login.html"
+}
 
 loginRedirect()
 
