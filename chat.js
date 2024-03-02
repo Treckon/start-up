@@ -10,6 +10,8 @@ function signOut(){
     window.location.href = "login.html"
 }
 
+loginRedirect()
+
 function comment(){
     let ul = document.createElement("ul")
     let p1 = document.createElement("p")

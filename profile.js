@@ -9,6 +9,7 @@ function signOut(){
     localStorage.removeItem("userName")
     window.location.href = "login.html"
 }
+loginRedirect()
 
 document.addEventListener("DOMContentLoaded", function() {
     let series = ["Mistborn", "Wax and Wayne", "The Stormlight Archive", "Tress of the Emerald Sea", "Warbreaker", "Elantris"]

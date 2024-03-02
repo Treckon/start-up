@@ -9,6 +9,7 @@ function signOut(){
     localStorage.removeItem("userName")
     window.location.href = "login.html"
 }
+loginRedirect()
 
 function submit(){
     console.log("submitting")
