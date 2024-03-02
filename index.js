@@ -18,6 +18,9 @@ loginRedirect()
 console.log("noobmaster69")
 let user = 'noobmaster69';
 setInterval(() => {
+
+    //Will be later edited to accomodate Websocket messages from other users
+
     console.log("interval set")
     chat = `${user} has commented in Mistborn Chat`;
     let ul = document.getElementById("#Notice")

@@ -12,6 +12,10 @@ function signOut(){
 
 loginRedirect()
 
+function receiveComment(){
+    //to receive comments on completion of Websocket
+}
+
 function comment(){
     let ul = document.createElement("ul")
     let p1 = document.createElement("p")
