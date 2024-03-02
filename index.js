@@ -9,6 +9,9 @@ function signOut(){
     localStorage.removeItem("userName")
     window.location.href = "login.html"
 }
+function searchChats(){
+    //to be implemented when proper external storage has been established.
+}
 
 loginRedirect()
 

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="editprofile.js"></script>
     <title>Document</title>
     <link rel="stylesheet" href="index.css" />
 </head>
@@ -19,60 +20,62 @@
 
             <fieldset>
                 <legend>Mistborn</legend>
-                <label for="series1">Mistborn</label>
-                <input type="radio" id="series1" name="series" value="Mistborn"/>
-                <label for="series2">The Well of Ascension</label>
-                <input type="radio" id="series2" name="series" value="The Well of Ascension"/>
-                <label for="series3">The Hero of Ages</label>
-                <input type="radio" id="series3" name="series" value="The Hero of Ages"/>
-                <label for="series4">Mistborn: Secret History</label>
-                <input type="radio" id="series4" name="series" value="Mistborn: Secret History"/>
+                <select name="Mistborn" id="mistborn">
+                    <option value="None">None</option>
+                    <option value="Mistborn">Mistborn</option>
+                    <option value="The Well of Ascension">The Well of Ascension</option>
+                    <option value="The Hero of Ages">The Hero of Ages</option>
+                    <option value="Mistborn: Secret History">Mistborn: Secret History</option>
+                </select>
             </fieldset>
 
             <fieldset>
                 <legend>Wax and Wayne</legend>
-                <label for="series1">The Alloy of Law</label>
-                <input type="radio" id="series1" name="series" value="The Alloy of Law"/>
-                <label for="series2">Shadows of Self</label>
-                <input type="radio" id="series2" name="series" value="Shadows of Self"/>
-                <label for="series3">The Bands of Mourning</label>
-                <input type="radio" id="series3" name="series" value="The Bands of Mourning"/>
-                <label for="series4">The Lost Metal</label>
-                <input type="radio" id="series4" name="series" value="The Lost Metal"/>
+                <select name="Wax and Wayne" id="waxandwayne">
+                    <option value="None">None</option>
+                    <option value="The Alloy of Law">The Alloy of Law</option>
+                    <option value="Shadows of Self">Shadows of Self</option>
+                    <option value="The Bands of Mourning">The Bands of Mourning</option>
+                    <option value="The Lost Metal">The Lost Metal</option>
+                </select>
             </fieldset>
 
             <fieldset>
                 <legend>The Stormlight Archive</legend>
-                <label for="series1">The Way of Kings</label>
-                <input type="radio" id="series1" name="series" value="The Way of Kings"/>
-                <label for="series2">Words of Radiance</label>
-                <input type="radio" id="series2" name="series" value="Words of Radiance"/>
-                <label for="series3">Oathbringer</label>
-                <input type="radio" id="series3" name="series" value="Oathbringer"/>
-                <label for="series4">Rhythm of War</label>
-                <input type="radio" id="series4" name="series" value="Rhythm of War"/>
-                <label for="series5">Winds of Roshar</label>
-                <input type="radio" id="series5" name="series" value="Winds of Roshar"/>
+                <select name="The Stormlight Archive" id="thestormlightarchive">
+                    <option value="None">None</option>
+                    <option value="The Way of Kings">The Way of Kings</option>
+                    <option value="Words of Radiance">Words of Radiance</option>
+                    <option value="Oathbringer">Oathbringer</option>
+                    <option value="Winds of Roshar">Winds of Roshar</option>
+                </select>
             </fieldset>
 
             <fieldset>
                 <legend>Tress of the Emerald Sea</legend>
-                <label for="series1">Tress of the Emerald Sea</label>
-                <input type="radio" id="series1" name="series" value="Tress of the Emerald Sea"/>
+                <select name="Tress of the Emerald Sea" id="tressoftheemeraldsea">
+                    <option value="None">None</option>
+                    <option value="Tress of the Emerald Sea">Tress of the Emerald Sea</option>
+                </select>
             </fieldset>
 
             <fieldset>
                 <legend>Warbreaker</legend>
-                <label for="series1">Warbreaker</label>
-                <input type="radio" id="series1" name="series" value="Warbreaker"/>
+                <select name="Warbreaker" id="warbreaker">
+                    <option value="None">None</option>
+                    <option value="Warbreaker">Warbreaker</option>
+                </select>
             </fieldset>
 
             <fieldset>
                 <legend>Elantris</legend>
-                <label for="series1">Elantris</label>
-                <input type="radio" id="series1" name="series" value="Elantris"/>
+                <select name="Elantris" id="elantris">
+                    <option value="None">None</option>
+                    <option value="Elantris">Elantris</option>
+                </select>
             </fieldset>
-            <button type="submit">Submit</button>
+
+            <button type="submit" onclick="submit()">Submit</button>
         </section>
     </main>
     <footer>
