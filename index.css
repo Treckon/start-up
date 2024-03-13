@@ -112,7 +112,7 @@ p.instruction{
 #login{
     flex: 0, 300px;
     width: 50%;
-    height: 300px;
+    height: 400px;
     position:fixed;
     left: 25%;
 }
