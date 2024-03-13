@@ -12,19 +12,42 @@ function signOut(){
 loginRedirect()
 
 document.addEventListener("DOMContentLoaded", function() {
-    let series = ["Mistborn", "Wax and Wayne", "The Stormlight Archive", "Tress of the Emerald Sea", "Warbreaker", "Elantris"]
+    let username = localStorage.getItem("userName");
+    let profile = getProfile(username);
+
+    let series = ["Mistborn", "Wax and Wayne", "The Stormlight Archive", "Tress of the Emerald Sea", "Warbreaker", "Elantris"];
 
     for (i of series){
-        let tr = document.createElement("tr")
-        let th1 = document.createElement("th")
-        let th2 = document.createElement("th")
-        tr.appendChild(th1)
-        tr.appendChild(th2)
+        let tr = document.createElement("tr");
+        let th1 = document.createElement("th");
+        let th2 = document.createElement("th");
+        tr.appendChild(th1);
+        tr.appendChild(th2);
 
-        th1.appendChild(document.createTextNode(i))
-        th2.appendChild(document.createTextNode(localStorage.getItem(i)))
-        document.querySelector('#progress').appendChild(tr)
+        let book = myString.toLowerCase(i);
+        book = book.trim();
+
+        th1.appendChild(document.createTextNode(i));
+        th2.appendChild(document.createTextNode(localStorage.getItem(i)));
+        document.querySelector('#progress').appendChild(tr);
     }
 
   });
+
+async function getProfile(name){
+    let profiles = [];
+    let mainProfile;
+    try {
+        const response = await fetch('/api/profile');
+        profiles = await response;
+        console.log(profiles);
+        mainProfile = profiles.find(({userName}) => userName === name);
+
+        localStorage.setItem('profile', JSON.stringify(scores));
+    } catch {
+        console.log(error);
+    }
+    return mainProfile;
+}
+
 
