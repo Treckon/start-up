@@ -1,0 +1,15 @@
+{
+  "name": "start-up",
+  "version": "1.0.0",
+  "description": "## Elevator Pitch Have you ever wanted to join a chat group to nerd out about your favorite book, but everybody seems to have read so much farther than you? No need to worry, this chatting site is configured to service new and experienced readers. Users can configure their settings according to the books they have read, and this site will automatically filter comment threads by book tags placed on them. Rest assured with this chat group that you will be protected from spoilers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}
