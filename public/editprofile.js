@@ -12,19 +12,20 @@ function signOut(){
 loginRedirect()
 
 async function submit(){
-    console.log("submitting")
-    let book1 = document.getElementById("mistborn")
-    localStorage.setItem("Mistborn", book1.value)
-    let book2 = document.getElementById("waxandwayne")
-    localStorage.setItem("Wax and Wayne", book2.value)
-    let book3 = document.getElementById("thestormlightarchive")
-    localStorage.setItem("The Stormlight Archive", book3.value)
-    let book4 = document.getElementById("tressoftheemeraldsea")
-    localStorage.setItem("Tress of the Emerald Sea", book4.value)
-    let book5 = document.getElementById("warbreaker")
-    localStorage.setItem("Warbreaker", book5.value)
-    let book6 = document.getElementById("elantris")
-    localStorage.setItem("Elantris", book6.value)
+    console.log("submitting");
+    let book1 = document.getElementById("mistborn");
+    localStorage.setItem("Mistborn", book1.value);
+    console.log(book1);
+    let book2 = document.getElementById("waxandwayne");
+    localStorage.setItem("Wax and Wayne", book2.value);
+    let book3 = document.getElementById("thestormlightarchive");
+    localStorage.setItem("The Stormlight Archive", book3.value);
+    let book4 = document.getElementById("tressoftheemeraldsea");
+    localStorage.setItem("Tress of the Emerald Sea", book4.value);
+    let book5 = document.getElementById("warbreaker");
+    localStorage.setItem("Warbreaker", book5.value);
+    let book6 = document.getElementById("elantris");
+    localStorage.setItem("Elantris", book6.value);
 
     const newUser = {
         userName: localStorage.getItem("userName"), 
@@ -34,7 +35,8 @@ async function submit(){
         tressoftheemeraldsea: book4.value,
         warbreaker: book5.value,
         elantris: book6.value
-    }
+    };
+    console.log(newUser);
 
     try{
         const response = await fetch('/api/editprofile', {
@@ -43,7 +45,6 @@ async function submit(){
             body: JSON.stringify(newUser),
           });
     }catch {
-        // If there was an error then just track scores locally
         console.log(error)
     }
 

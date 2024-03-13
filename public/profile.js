@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function() {
         tr.appendChild(th1);
         tr.appendChild(th2);
 
-        let book = myString.toLowerCase(i);
+        let book = i.toLowerCase();
         book = book.trim();
 
         th1.appendChild(document.createTextNode(i));

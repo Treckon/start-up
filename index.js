@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 // The service port. In production the frontend code is statically hosted by the service on the same port.
-const port = process.argv.length > 2 ? process.argv[2] : 3000;
+const port = process.argv.length > 2 ? process.argv[2] : 4000;
 
 // JSON body parsing using built-in middleware
 app.use(express.json());
@@ -21,7 +21,9 @@ apiRouter.get('/profile', (_req, res) => {
 
 // Edit Profile
 apiRouter.post('/editprofile', (req, res) => {
-  profile = updateScores(req.body, profile);
+  console.log("adding preferences");
+  console.log(req.body);
+  profile = updateProfile(req.body, profile);
   res.send(profile);
 });
 
@@ -38,8 +40,8 @@ let profile = [];
 
 function updateProfile(newProfile, profile) {
     let found = false;
-    for (const [i, prevProfile] of profile.entries()) {
-      if (newScore.userName == prevProfile.userName) {
+    for (let [i, prevProfile] of profile.entries()) {
+      if (newProfile.userName == prevProfile.userName) {
         prevProfile = newProfile;
         found = true;
         break;
