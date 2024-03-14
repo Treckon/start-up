@@ -72,8 +72,10 @@ Functionality for this website configured using JavaScript for a single individu
 1. Node.js/Express HTTP service
 2. Static middleware for frontend
 3. Calls to third party endpoints - Quote Generator located in the login page
-4. Backend service endpoints - /profile - sends current user profile and preferences for listing
-5. Frontend calls service endpoints
+4. Backend service endpoints:
+        - /profile - sends current user profile and preferences for listing
+        - /editprofile - post function called when a user edit their progress in selected series.
+5. Frontend calls service endpoints via "Profile" and "Edit Profile -> Submit" buttons
 
 ## DB/Login Deliverable
 
