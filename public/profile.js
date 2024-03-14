@@ -11,9 +11,9 @@ function signOut(){
 }
 loginRedirect()
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", async function() {
     let username = localStorage.getItem("userName");
-    let profile = getProfile(username);
+    let profile = await getProfile(username);
 
     let series = ["Mistborn", "Wax and Wayne", "The Stormlight Archive", "Tress of the Emerald Sea", "Warbreaker", "Elantris"];
 
@@ -25,10 +25,14 @@ document.addEventListener("DOMContentLoaded", function() {
         tr.appendChild(th2);
 
         let book = i.toLowerCase();
-        book = book.trim();
+        book = book.replace(" ", "");
+        book = book.replace(" ", "");
+        book = book.replace(" ", "");
+        book = book.replace(" ", "");
+        
 
         th1.appendChild(document.createTextNode(i));
-        th2.appendChild(document.createTextNode(localStorage.getItem(i)));
+        th2.appendChild(document.createTextNode(profile[book]));
         document.querySelector('#progress').appendChild(tr);
     }
 
@@ -39,14 +43,18 @@ async function getProfile(name){
     let mainProfile;
     try {
         const response = await fetch('/api/profile');
-        profiles = await response;
+        profiles = await response.json();
         console.log(profiles);
         mainProfile = profiles.find(({userName}) => userName === name);
+        console.log(mainProfile);
 
         localStorage.setItem('profile', JSON.stringify(scores));
-    } catch {
+    } catch(error) {
+        console.log("error received")
         console.log(error);
     }
+    console.log("main profile");
+    console.log(mainProfile);
     return mainProfile;
 }
 

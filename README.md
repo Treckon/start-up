@@ -67,17 +67,12 @@ Functionality for this website configured using JavaScript for a single individu
 4. application logic - Within chat pages, can submit comments that will be added to the page. Each comment you make will be tagged with your current username.
 5. login logic - If the user is not logged in, any page they try to visit will result in being redirected to the login page. The logic checks the local storage for userName every page load to create this effect. When Sign Out is selected, local storage is cleared, so the user must log in again to continue.
 
-
-
-
-
-
 ## Service Deliverable
 
 1. Node.js/Express HTTP service
 2. Static middleware for frontend
-3. Calls to third party endpoints - None to be implemented.
-4. Backend service endpoints - Placeholders for login that stores the current user on the server.
+3. Calls to third party endpoints - Quote Generator located in the login page
+4. Backend service endpoints - /profile - sends current user profile and preferences for listing
 5. Frontend calls service endpoints
 
 ## DB/Login Deliverable
