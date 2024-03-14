@@ -42,13 +42,15 @@ function updateProfile(newProfile, profile) {
     let found = false;
     for (let [i, prevProfile] of profile.entries()) {
       if (newProfile.userName == prevProfile.userName) {
-        prevProfile = newProfile;
+        console.log("profile found");
+        profile[i] = newProfile;
         found = true;
         break;
       }
     }
   
     if (!found) {
+      console.log("profile not found");
       profile.push(newProfile);
     }
   
