@@ -18,10 +18,13 @@ async function login() {
     let p = document.createElement("p");
     let node = document.createTextNode("Username or Password Incorrect");
     p.appendChild(node)
+    section.appendChild(p)
+  } else{
+    localStorage.setItem("userName", nameEl.value);
+    window.location.href = "index.html";
   }
 
-  localStorage.setItem("userName", nameEl.value);
-  window.location.href = "index.html";
+  
 }
 
 async function signup() {
